@@ -13,7 +13,7 @@ function abrir(opciones) {
                <br />Soy Diplomada en Graduado Social por la Universidad de
                 Santiago de Compostela; estudios que cursé entre los años 1991 y
                1994. <br />
-              Entre los años 1996 y 1997 realizé un curso de especializacion
+              Entre los años 1996 y 1997 realicé un curso de especializacion
              laboral impartido en la misma universidad.
                   </p>
   <button onclick="cerrar()" id="cerrar" class="cerrar">X</button> 
