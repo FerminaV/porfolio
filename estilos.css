@@ -85,8 +85,8 @@ hr {
   border-width: 5px;
 }
 h5 {
-   font-size: 2.5rem;
-   } 
+  font-size: 2.5rem;
+}
 p {
   font-family: cookie;
   font-size: 2.5rem;
@@ -222,7 +222,6 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 a {
   display: flex;
@@ -233,12 +232,12 @@ a {
   margin: 3rem;
 }
 footer {
- background-color: rgb(179, 154, 14);
- }
-.github{
+  background-color: rgb(179, 154, 14);
+}
+.github {
   display: flex;
   flex-direction: row;
-  gap:9rem;
+  gap: 5rem;
   justify-content: center;
   font-family: dancing;
   color: white;
@@ -246,8 +245,12 @@ footer {
   margin: 0 auto;
   list-style: none;
 }
-
-
+#listaFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7rem;
+}
 @media screen and (max-width: 1336px) {
   h1 {
     text-align: left;
@@ -281,7 +284,7 @@ footer {
   }
   h5 {
     justify-content: start;
-   
+
     font-size: 2.5rem;
   }
   nav {
@@ -321,5 +324,7 @@ footer {
     margin: 2rem;
     text-decoration: none;
   }
-  
+  #listaFooter {
+    gap: 20px;
+  }
 }
