@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.v.G.</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.js">
+</head>
+<body>
+    <header>
+        <h2>FERMINA VILLANUSTRE GEY</h2>
+        <nav>
+            <button class="abrir" onclick="abrir(`formacion`)">Formacion</button>
+            <div id="popupContenedor"> </div>
+              <button class="abrir" onclick="abrir(`sobremi`)">Sobre Mi</button>
+            <ul>
+             <li class="abrir" id="cv"><a id="curriculum"  href="assets/CURRICULUM FER (3).pdf" target="_blank">Currículum</a> </li>
+                 </ul>         <!-- <div id="popupContenedor"> </div> -->
+          <button  class="abrir" onclick="abrir(`contacto`)">Contacto</button>
+          <!-- <div id="popupContenedor"> </div> -->
+          <button class="abrir" onclick="abrir(`Conocimientos`)">Lenguajes</button>
+         </nav>
+    </header>
+    <main>
+        <div id="main">
+           <section>
+         <img id="foto" src="assets/foto2.jpg" alt="Foto de Fermina" />
+        </section>
+          <h1 id="saludo">Hola! <br><br> ¿Quieres conocerme?</h1>
+         </div>
+        <aside>
+          <div>
+            <h3>Desarrolladora Web</h3>
+            <hr />
+          </div>
+           <h4><u>proyectos</u></h4>
+          <div id="proyectos">
+            <ul id="ul">
+              <li id="ListaProyectos"><a href="https://ferminav.github.io/exercicio-32/">Exercicio32</a></li>
+              <li id="ListaProyectos"><a href="https://ferminav.github.io/carta-a-los-reyes-magos/">Exercicio33</a></li>
+              <li id="ListaProyectos"><a href="https://ferminav.github.io/Mitologia-de-los-dias-de-la-semana/">Exercicio35</a></li>
+             
+              </ul>
+           </div> 
+          </aside>
+        </main>
+      <footer>
+        <div class="github">
+       <h5>&copy; Fer 2024</h5>
+       <ul>
+        <li class="github"><a class="github" href="https://github.com/FerminaV">Github</a></li>
+       </ul>
+       </div>
+     </footer>
+<script src="java.js"></script>
+</body>
+</html>

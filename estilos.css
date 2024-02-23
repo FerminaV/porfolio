@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: 0;
+}
+@font-face {
+  font-family: dancin;
+  src: url(assets/fontes/DancingScript-Bold.ttf);
+}
+@font-face {
+  font-family: cookie;
+  src: url(assets/fontes/Cookie-Regular.ttf);
+}
+@font-face {
+  font-family: new;
+  src: url(assets/fontes/Newsreader-Italic-VariableFont_opsz_wght.ttf);
+}
+@font-face {
+  font-family: vast;
+  src: url(assets/fontes/VastShadow-Regular.ttf);
+}
+body {
+  background-image: url(assets/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+h1 {
+  display: flex;
+  text-align: center;
+  padding-left: 1rem;
+  font-family: new;
+  color: rgb(189, 246, 32);
+  font-size: 4rem;
+  margin: 2rem 8rem;
+}
+h2 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 1.5rem 15rem 3rem 24rem;
+  font-family: new;
+  color: rgb(189, 246, 32);
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+h4 {
+  padding: 1.5rem;
+  font-family: dancin;
+  color: rgb(189, 246, 32);
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
+  margin: 3rem;
+}
+h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-inline-end: 5rem;
+  padding: 1.5rem;
+  font-family: new;
+  color: rgb(189, 246, 32);
+  font-size: 3rem;
+}
+hr {
+  width: 80%;
+  justify-content: end;
+  color: rgb(179, 154, 14);
+  margin-inline-start: 45rem;
+  margin-inline-end: 10rem;
+  border-style: double;
+  border-width: 5px;
+}
+h5 {
+   font-size: 2.5rem;
+   } 
+p {
+  font-family: cookie;
+  font-size: 2.5rem;
+}
+nav {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  margin: 3rem 8rem;
+}
+#foto {
+  width: 15rem;
+  height: 25rem;
+  border-radius: 50%;
+  margin: 3rem 9rem;
+  size: 6rem;
+}
+#curriculum {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  text-decoration: none;
+  position: relative;
+  font-family: cookie;
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  margin: 1rem;
+}
+#cv {
+  width: 6em;
+  height: 2.2em;
+}
+.abrir {
+  background-color: rgb(179, 154, 14);
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 6em;
+  height: 3em;
+  font-family: cookie;
+  border: none;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+}
+.abrir::before {
+  content: "";
+  height: 3em;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: 0.5s ease;
+  border-radius: 20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: -1;
+}
+.abrir:hover::before {
+  width: 11.5em;
+}
+.popup {
+  display: flex;
+  background-color: rgb(242, 244, 222);
+  box-shadow: 0px 0px 5px 0px;
+  border-radius: 25px;
+  padding: 15px;
+  text-align: left;
+  z-index: 1;
+}
+.popupHijo {
+  padding: 1rem;
+  text-align: left;
+  color: rgb(179, 154, 14);
+}
+button {
+  cursor: pointer;
+}
+.cerrar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(242, 244, 222);
+  color: black;
+  font-size: 3.5rem;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+}
+.cerrar:hover {
+  color: rgb(179, 154, 14);
+}
+#popupContenedor {
+  position: absolute;
+  margin: 0.8rem auto;
+  padding: 15rem;
+  justify-content: center;
+}
+.datosContacto {
+  padding: 1rem;
+  text-align: left;
+  color: rgb(179, 154, 14);
+  font-size: 3rem;
+  justify-content: center;
+  letter-spacing: 4px;
+}
+#conocimientos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  background-color: rgba(179, 154, 14);
+  width: 55rem;
+  height: 9rem;
+}
+.fotoIconos {
+  padding: 7rem;
+}
+#ListaProyectos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem;
+  padding: auto;
+}
+#ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+a {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: dancin;
+  color: rgba(189, 246, 32, 0.966);
+  font-size: 2.5rem;
+  margin: 3rem;
+}
+footer {
+ background-color: rgb(179, 154, 14);
+ }
+.github{
+  display: flex;
+  flex-direction: row;
+  gap:9rem;
+  justify-content: center;
+  font-family: dancing;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  list-style: none;
+}
+
+
+@media screen and (max-width: 1336px) {
+  h1 {
+    text-align: left;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  h2 {
+    text-align: left;
+    margin-top: 2rem;
+    padding: 1.5rem 5rem 3rem 2rem;
+    font-size: 3rem;
+    letter-spacing: 10px;
+  }
+  h4 {
+    padding: 1.5rem;
+    color: rgb(179, 154, 14);
+    font-size: 3rem;
+    justify-content: start;
+    margin: 4rem;
+  }
+  h3 {
+    justify-content: start;
+    margin-inline-start: 1rem;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+  }
+  hr {
+    justify-content: flex-start;
+    margin-inline-start: 0.5rem;
+    border-width: 5px;
+  }
+  h5 {
+    justify-content: start;
+   
+    font-size: 2.5rem;
+  }
+  nav {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem 2rem;
+  }
+  .popupHijo {
+    padding: 3rem;
+  }
+  #popupContenedor {
+    margin: 1rem auto;
+    padding: 14rem;
+  }
+  .datosContacto {
+    font-size: 2.5rem;
+  }
+  #conocimientos {
+    justify-content: left;
+    width: 45rem;
+    height: 8rem;
+  }
+  .fotoIconos {
+    padding: 5rem;
+  }
+  #ListaProyectos {
+    margin: 1rem;
+  }
+  #ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  a {
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-decoration: none;
+  }
+  
+}
